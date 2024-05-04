@@ -1,0 +1,56 @@
+<h1><strong>Automatic Malocclusion Treatment Planning 2024</strong></h1>
+<h3>Introduction</h3>
+<figure>
+<!--    let the image be centered-->
+<!--    <img src="CGI-fig1.png" width="600" >-->
+    <img src="CGI-fig1.png" width="450" style="display: block; margin-left: auto; margin-right: auto;">
+    <figcaption>Fig.1. An upper jaw example of orthodontics treatment. (a) depicts the orthodontics status before malocclusion treatment, and (b) after malocclusion treatment. We can see that the misaligned teeth in (a), indicated by arrows, has been revised to be aligned in (b).</figcaption>
+</figure>
+<p>Malocclusion refers to a misalignment or incorrect relationship between the teeth of upper and lower jaw arches when they approach each other as the jaws close. As shown in Fig. 1, correction of malocclusion is an orthodontic treatment to achieve optimum relations in physiologic and esthetic harmony among cranial structures and occlusion. The treatment involves adjusting facial bones and teeth by aligning and/or extracting teeth. Current manual or computer-aided treatment planning process is laborious and time-consuming as it requires several revisions from orthodontists. Therefore, an effective treatment planning system is essential to help orthodontists to analyze the malocclusion cases, streamline treatment workflow and enhance overall efficiency.</p>
+<p>We propose Automatic Malocclusion Treatment Planning Challenge (AMTPC) to promote the application of machine learning and deep learning algorithms in computer-aided automatic malocclusion treatment planning. The main task of the challenge is teeth rearrangement. Specifically, given the point clouds of 32 teeth from a patient, the purpose of the task is to rearrange the teeth to predict the post-treatment alignment of the teeth as shown in Fig. 1. The objective of this task is to analysis the input with deep learning backbones designed for point cloud (e.g., PointNet[1][2]), and regress parameters for rigid 3D transformation from the extracted features. We introduce a baseline methodology of this task, PointNet Spatial Transformer Network (PSTN)[3], as a reference and initial framework support. The predicted results can then be used to assist the orthodontists in planning.</p>
+<hr>
+<h3>Challenge Description</h3>
+<p>The challenge AMTP is a first edition associated with <a href="https://www.cgs-network.org/cgi24/">CGI2024</a>. The main task of the challenge is point cloud based teeth rearrangement.</p>
+
+<h3>Important dates</h3>
+<ul>
+    <li>Release of training data: May 7th 2024.</li>
+    <li>Open for submission on validation set: May 7th 2024.</li>
+    <li>Open for submission on test set: June 16th 2024.</li>
+    <li>Submission deadline on test set: June 24th 2024.</li>
+    <li>Submission deadline for method description paper: June 27th 2024.</li>
+    <li>Speaker Invitation: June 29th 2024.</li>
+    <li>Associated workshop day: During July 1th - 5th at the CGI 2024 workshop.</li>
+</ul>
+
+<h3>Awards</h3>
+<ul>
+    <li>Certificates will be awarded to the top three team.</li>
+    <li>The top ranked teams will be invited to give oral presentations during CGI 2024 Workshop.</li>
+    <li>The first and last authors of the submitted paper from the top ranked teams will have the opportunity to co-author the challenge summary paper.</li>
+</ul>
+
+<h3>Organizers</h3>
+<h4>Challenge chairs</h4>
+<ul>
+    <li>Lingyong Jiang, Shanghai Ninth People’s Hospital, Shanghai Jiao Tong University School of Medicine, Shanghai, China </li>
+    <li>Bin Sheng, Shanghai Jiao Tong University, Shanghai, China</li>
+    <li>Jinman Kim, The University of Sydney, Sydney, Australia </li>
+</ul>
+<h4>Challenge committee chiar</h4>
+<ul>
+    <li>Lei Bi, Shanghai Jiao Tong University, Shanghai, China</li>
+</ul>
+<h4>Challenge committee</h4>
+<ul>
+    <li>Xiaoshuang Li, Shanghai Jiao Tong University, Shanghai, China</li>
+    <li>Miri Chung, Shanghai Ninth People’s Hospital, Shanghai Jiao Tong University School of Medicine, Shanghai, China</li>
+    <li>Anushka Kharbanda, The University of Sydney, Sydney, Australia </li>
+</ul>
+
+<h4>Challenge Contact</h4>
+<p>For any questions, please contact the challenge chairs via E-mail: MATP2024CGI@163.com.</p>
+
+<p><strong>References</strong><br />[1] Qi, C.R., Su, H., Mo, K., Guibas, L.J.: PointNet: deep learning on point sets for 3D classification and segmentation. In: Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, pp. 652–660 (2017)
+<br />[2] Qi, C.R., Su, H., Mo, K., Guibas, L.J.: PointNet: deep learning on point sets for 3D classification and segmentation. In: Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, pp. 652–660 (2017)
+<br />[3] Li X, Bi L, Kim J, et al. Malocclusion treatment planning via pointnet based spatial transformation network[C]//International Conference on Medical Image Computing and Computer-Assisted Intervention. Cham: Springer International Publishing, 2020: 105-114.</p>

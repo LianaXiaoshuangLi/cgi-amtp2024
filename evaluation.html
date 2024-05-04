@@ -1,0 +1,15 @@
+<h3>Metrics</h3>
+<p>The performance will be evaluated by cosine similarity accuracy (CSA) and target registration error (TRE). The metrics calculation code can be found <a href="amtp_metrics.py">here</a>.</p>
+<ul>
+    <li><strong>TRE</strong> measures the absolute distance between the transformed point cloud and its reference target, which provides an intuitive impression of the planning error.</li>
+    <li><strong>CSA</strong> is used to measure the difference between the generated transformation matrix and its ground truth. The matrix was flattened to a vector that can be applied to cosine similarity. Then the value range was mapped from [-1, 1] to [0, 1]. </li>
+</ul>
+
+<h3>Ranking methods</h3>
+<p>First, individual metric scores are calculated for both TRE and CSA on all test cases. Then, the ranking is determined by prioritizing the larger TRE scores, with the smaller CSA scores used as a tie-breaker when necessary.</p>
+
+<h3>Validation phase</h3>
+<p>During this phase, participants will have the opportunity to evaluate their methods on a validation set and ensure that their code submission is in the correct format. Please note that this phase does not count towards final rankings. Once participants complete their submission, the scoring program will run automatically, and the evaluation results will be displayed on the leaderboard. The best results among multiple submissions will be displayed on the leaderboard. During this phase, each participating team is allowed to submit one entry per day.</p>
+
+<h3>Test phase</h3>
+<p>During this phase, the submissions from each team will be evaluated automatically on the test set. The leaderboard will be hidden and not visible to the participants. Each team is allowed a maximum of five submissions, and the best result will be taken as the final challenge result. Once the challenge is over, we will publicly release the evaluation results on the test set, as well as the rankings of each team. Please note that only submissions from TEAM LEADER are eligible for the final ranking.</p>
